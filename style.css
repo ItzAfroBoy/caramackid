@@ -26,31 +26,35 @@ header .logo {
 	text-decoration: none;
 	letter-spacing: 2px;
 	font-weight: 600;
-
 }
 
-header ul {
+header nav {
 	position: relative;
 	display: flex;
 }
 
-header ul li {
+header nav div {
 	position: relative;
 	list-style: none;
 }
 
-header ul li a {
+header nav div a {
 	position: relative;
-	padding: 5px 10px;
+	padding: 0px 20px;
 	color: #ffffff;
-	display: inline-block;
+	font-size: 1.2em;
 	text-decoration: none;
-	cursor: pointer;
 }
 
-header ul li a.active,
-header ul li a:hover {
-	background: #205aff;
+nav #marker {
+	position: absolute;
+	left: 0;
+	height: 4px;
+	width: 0%;
+	background: #ffffff;
+	bottom: -8px;
+	transition: 0.5s;
+	border-radius: 4px;
 }
 
 .toggle {
@@ -69,6 +73,7 @@ section {
 section img {
 	max-width: 350px;
 	margin-left: 30px;
+	border-radius: 21px;
 }
 
 section h2 {
@@ -99,7 +104,7 @@ section:nth-child(odd) {
 	color: #ffffff;
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
 	section {
 		padding: 10px 50px 50px;
 		flex-direction: column;
@@ -181,4 +186,4 @@ section:nth-child(odd) {
 		bottom: 14px;
 		transform: rotate(-45deg);
 	}
-}
+} */
