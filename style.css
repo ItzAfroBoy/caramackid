@@ -231,3 +231,17 @@ ul li:nth-child(4):hover span {
 ul li:nth-child(5):hover span {
     background: #e4405f;
 }
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 35px, 0);
+    }
+}
+
+.bounce {
+	animation: bounce 0.85s ease-in infinite alternate;
+}
